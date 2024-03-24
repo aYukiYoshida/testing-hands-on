@@ -1,0 +1,10 @@
+{
+  "extension": ["ts"],
+  "spec": "mocha/**/*.spec.ts",
+  "require": [
+    "ts-node/register"
+  ],
+  "node-option": [
+    "import=tsx/esm"
+  ]
+}
