@@ -1,6 +1,4 @@
-# Playwright Hands-on
-
-This repository manages codes for hands-on of [Playwright](https://playwright.dev).
+# Hands-on of Testing
 
 ## Requirements
 
