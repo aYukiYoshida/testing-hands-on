@@ -1,0 +1,8 @@
+name: Authentication
+variables:
+  user:
+    name: pulsar
+    password: neutronstar
+  host:
+    name: xray
+    secret: CGQgaG7GYvTcpaQZqosLy5

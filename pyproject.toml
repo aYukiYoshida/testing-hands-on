@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pysut"
+version = "0.1.0"
+description = "Software Under the Test in Python"
+authors = ["aYukiYoshida <yuki.yoshida@access-company.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pysut", from = "sut"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.3"
+pyjwt = "^2.6.0"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.2"
+types-pyyaml = "^6.0.12.20240311"
+ruff = "^0.3.4"
+pyright = "^1.1.355"
+
+[tool.poetry.scripts]
+pysut = "pysut.__main__:main"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

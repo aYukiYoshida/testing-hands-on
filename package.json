@@ -1,0 +1,49 @@
+{
+  "name": "testing-hands-on",
+  "version": "0.1.0",
+  "description": "Hands-on of Testing",
+  "scripts": {
+    "prepare:playwright": "playwright install",
+    "test:playwright": "playwright test",
+    "test:playwright:report": "playwright show-report",
+    "test:cypress": "start-server-and-test 'mise run pysut' 8888 'cypress run'",
+    "test:cypress:open": "cypress open",
+    "test:mocha": "mocha"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/chai": "^4.3.13",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.8.6",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "chai": "^5.1.0",
+    "cypress": "^13.7.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "mocha": "^10.3.0",
+    "prettier": "^2.8.8",
+    "start-server-and-test": "^2.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aYukiYoshida/testing-hands-on.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Yuki Yoshida <yuki.yoshida@access-company.com> (https://ayukiyoshida.github.io/tips/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aYukiYoshida/testing-hands-on/issues"
+  },
+  "homepage": "https://github.com/aYukiYoshida/testing-hands-on#readme"
+}

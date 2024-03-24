@@ -1,0 +1,21 @@
+[tools]
+poetry = "1.8.1"
+python = "3.10.10"
+node = "20"
+[tasks."setup:python:dependencies"]
+run = "poetry install"
+[tasks."setup:node:dependencies"]
+run = "npm install"
+[tasks."setup:pre-commit"]
+run = "poetry run pre-commit install"
+depends = ["setup:python:dependencies"]
+[tasks.setup]
+depends = ["setup:*"]
+[tasks.pysut]
+run = "poetry run pysut"
+[tasks."test:playwright"]
+run = "npm run test:playwright"
+[tasks."test:cypress"]
+run = "npm run test:cypress"
+[tasks."test:mocha"]
+run = "npm run test:mocha"

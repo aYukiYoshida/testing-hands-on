@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='style.css')}}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to TESEUS</h1>
+    {% if status == 'succeeded' %}
+    <p style="color: green" data-testid="status">Success to login.</p>
+    {% endif %} {% if status == 'failed' %}
+    <p style="color: red" data-testid="status">
+      Incorrect username or password.
+    </p>
+    {% endif %}
+  </body>
+</html>
